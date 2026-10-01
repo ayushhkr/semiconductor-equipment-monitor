@@ -1,6 +1,6 @@
-# Semiconductor Equipment Monitoring & Fault Diagnosis Simulator
+# Plasma Etch Chamber Monitoring & Fault Diagnosis Simulator
 
-A small Streamlit portfolio project that simulates monitoring of a semiconductor process chamber. It was built to demonstrate an approachable engineering-dashboard workflow in a focused, time-boxed project.
+An educational software simulation of a plasma etch process chamber that monitors chamber pressure, process-gas flow, RF power, and temperature, detects abnormal conditions using rule-based diagnostics, and demonstrates structured troubleshooting, preventive-maintenance, and shift-reporting workflows.
 
 > **Important disclaimer:** This is an educational simulation, not a real equipment-control system. It does not connect to hardware and does not perform LOTO, ESD, cleanroom, vacuum-system, or semiconductor-equipment maintenance. Use qualified personnel and approved site procedures for real equipment.
 

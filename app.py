@@ -1,4 +1,4 @@
-"""Semiconductor Equipment Monitoring & Fault Diagnosis Simulator."""
+"""Plasma Etch Chamber Monitoring & Fault Diagnosis Simulator."""
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -8,7 +8,7 @@ from diagnostics import diagnose, overall_status
 from simulator import FAULTS, PARAMETERS, generate_readings
 
 
-st.set_page_config(page_title="Chamber Monitor | Training", page_icon="⚙️", layout="wide")
+st.set_page_config(page_title="Plasma Etch Chamber Monitor | Training", page_icon="⚙️", layout="wide")
 st.markdown("""
 <style>
     .block-container {max-width: 1250px; padding-top: 2rem;}
@@ -20,8 +20,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Semiconductor Equipment Monitoring & Fault Diagnosis Simulator")
-st.markdown("<p class='disclaimer'>Educational training simulation only. It does not control equipment or replace qualified engineering, safety, LOTO, ESD, cleanroom, vacuum-system, or maintenance procedures.</p>", unsafe_allow_html=True)
+st.title("Plasma Etch Chamber Monitoring & Fault Diagnosis Simulator")
+st.markdown("<p class='disclaimer'>Educational training simulation only. It does not control real semiconductor equipment or replace qualified engineering, safety, LOTO, ESD, cleanroom, vacuum-system, or maintenance procedures.</p>", unsafe_allow_html=True)
 
 if "fault_mode" not in st.session_state:
     st.session_state.fault_mode = "Normal operation"
@@ -93,8 +93,9 @@ else:
     st.caption(f"{sum(checked)} of {len(checklist)} training items complete.")
 
 st.subheader("Shift summary")
+st.caption("Equipment: Plasma Etch Chamber A — Simulation")
 summary = pd.DataFrame([{
-    "equipment_name": "Simulated Process Chamber A", "shift_duration": "100 minutes",
+    "equipment_name": "Plasma Etch Chamber A — Simulation", "shift_duration": "100 minutes",
     "average_pressure_mTorr": round(readings["pressure"].mean(), 2),
     "average_gas_flow_sccm": round(readings["gas_flow"].mean(), 2),
     "average_rf_power_W": round(readings["rf_power"].mean(), 2),
