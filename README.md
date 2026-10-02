@@ -49,11 +49,7 @@ This is a simulated training workflow; it never recommends unsupervised equipmen
 
 This project demonstrates instrumentation-style parameter monitoring, time-series interpretation, structured troubleshooting, preventive-maintenance thinking, anomaly escalation, and clear technical documentation. It does **not** claim real semiconductor-equipment experience.
 
-## Screenshot placeholders
 
-- `[Dashboard overview screenshot]`
-- `[Fault diagnostic screenshot]`
-- `[Shift-summary screenshot]`
 
 ## How to run
 
